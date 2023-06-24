@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Red+Hat+Display&display=swap");
+.header_container {
+  background-image: url("../../../public/images/header_image.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.logo {
+  font-family: "Marcellus", serif;
+}
+.menu {
+  font-family: "Red Hat Display", sans-serif;
+}
+@font-face {
+  font-family: "MADE Mirage";
+  src: url(../../../public/fonts/MADE\ Mirage\ Thin\ PERSONAL\ USE.otf);
+}
+.header_text,
+.text {
+  font-family: "MADE Mirage";
+}

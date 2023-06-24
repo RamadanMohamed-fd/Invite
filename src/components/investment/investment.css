@@ -1,0 +1,10 @@
+.background {
+  background-image: url("../../../public/images/sup.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+}
+.background1 {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(30px);
+}

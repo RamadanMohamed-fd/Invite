@@ -1,13 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Meow+Script&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  opacity: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222;
+  cursor: pointer;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.text2 {
+  font-family: "Meow Script", cursive;
+}
+.under::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #c5a56f;
+  transition: 1s;
+}
+.under:hover::after {
+  width: 70%;
+}
+
+.triangle-element {
+  width: 160px;
+  height: 140px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.inv_title {
+  font-size: 8rem;
+}
+.inv_sup {
+  font-size: 7rem;
+  margin-top: -120px;
+}
+@media (600px <= width <= 850px) {
+  .inv_title {
+    font-size: 6rem;
+  }
+  .inv_sup {
+    font-size: 5rem;
+    margin-top: -90px;
+  }
+}
+@media (500px <= width < 600px) {
+  .inv_title {
+    font-size: 5rem;
+  }
+  .inv_sup {
+    font-size: 4rem;
+    margin-top: -70px;
+  }
+}
+@media (400px <= width < 500px) {
+  .inv_title {
+    font-size: 4rem;
+  }
+  .inv_sup {
+    font-size: 3rem;
+    margin-top: -60px;
+  }
+}
+@media (80px <= width < 400px) {
+  .inv_title {
+    font-size: 2.8rem;
+  }
+  .inv_sup {
+    font-size: 2.3rem;
+    margin-top: -40px;
+  }
+}
+
+[data-aos="rotate-c"] {
+  transform: rotate(-180deg);
+  transition-property: transform;
+}
+[data-aos="rotate-c"].aos-animate {
+  transform: rotate(0deg);
+}
+
+.explor {
+  animation: show 1s 2s forwards;
+}
+
+@keyframes show {
+  100% {
+    opacity: 1;
+  }
+}
+
+.e {
+  position: fixed;
+  mix-blend-mode: difference;
+  z-index: 100;
+}
+
+.an {
+  animation: ani 5s infinite linear;
+}
+@keyframes ani {
+  0%,
+  100% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(-33px);
+  }
+}
+.an1 {
+  animation: ani1 5s infinite linear;
+  animation-delay: 2.5s;
+}
+@keyframes ani1 {
+  0%,
+  100% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(33px);
+  }
 }

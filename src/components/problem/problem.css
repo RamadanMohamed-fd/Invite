@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Red+Hat+Display&display=swap");
+.text1 {
+  font-family: "Red Hat Display", sans-serif;
+}
+.circle {
+  animation: cir 8s linear infinite;
+}
+@keyframes cir {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.cirr {
+  animation: cirr 8s linear infinite;
+}
+@keyframes cirr {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.roted {
+  animation: roted 4s linear infinite;
+  transform-origin: top left;
+}
+@keyframes roted {
+  25% {
+    transform: rotate(45deg);
+  }
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-45deg);
+  }
+}
+
+.hl {
+  padding-top: 100px;
+}
