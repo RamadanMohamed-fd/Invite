@@ -84,10 +84,14 @@ const Form = (props) => {
           </label>
         </div>
 
-        <div className=" relative  flex justify-center items-center w-full bg-transparent cursor-pointer p-2 outline-none border-2 border-white">
-          <input type="submit" value="Send" />
-          <BsSend className="mx-2 text-xl " />
-        </div>
+        {/* <div className=" relative  flex justify-center items-center w-full bg-transparent cursor-pointer p-2 outline-none border-2 border-white"> */}
+        <input
+          type="submit"
+          value="Send"
+          className="w-full bg-transparent cursor-pointer p-2 outline-none border-2 border-white"
+        />
+        {/* <BsSend className="mx-2 text-xl " /> */}
+        {/* </div> */}
       </form>
       <div
         className=" absolute text-2xl  top-20 right-24 cursor-pointer hover:text-red-300 duration-300"
