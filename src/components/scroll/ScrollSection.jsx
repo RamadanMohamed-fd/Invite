@@ -4,7 +4,7 @@ const ScrollSection = (props) => {
   return (
     <a
       href={props.href}
-      className={` e  text-white top-[30%] w-8 h-24 absolute right-4 flex flex-col items-center justify-center  `}
+      className={` e  text-white top-[65%] ml-4 w-8 h-24 absolute right-4 max-[550px]:hidden flex flex-col items-center justify-center  `}
     >
       <div
         className={`w-4 h-6 mr-1 border-2   rounded-xl  text-[8px] flex justify-center items-center`}

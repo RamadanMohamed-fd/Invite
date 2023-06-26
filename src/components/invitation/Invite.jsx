@@ -17,7 +17,7 @@ const Invite = (props) => {
       onMouseEnter={handleValue}
       className=" relative flex w-full bg-white opacity-100  flex-col justify-start items-center "
     >
-      <div data-aos="fade-down" className="p-20 mt-2  text-lg">
+      <div data-aos="fade-down" className="p-20  mt-2  text-lg">
         <InviteSvg />
       </div>
       <div

@@ -8,45 +8,31 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
-/* width */
+
+.over {
+  overflow: hidden;
+}
 ::-webkit-scrollbar {
   width: 10px;
-  opacity: 0;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #222;
   cursor: pointer;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   border: 2px solid #fff;
   border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
 .text2 {
   font-family: "Meow Script", cursive;
 }
@@ -112,24 +98,6 @@ code {
   }
 }
 
-[data-aos="rotate-c"] {
-  transform: rotate(-180deg);
-  transition-property: transform;
-}
-[data-aos="rotate-c"].aos-animate {
-  transform: rotate(0deg);
-}
-
-.explor {
-  animation: show 1s 2s forwards;
-}
-
-@keyframes show {
-  100% {
-    opacity: 1;
-  }
-}
-
 .e {
   position: fixed;
   mix-blend-mode: difference;
@@ -160,4 +128,12 @@ code {
   50% {
     transform: translateX(33px);
   }
+}
+
+input:focus ~ label,
+input:valid ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: -40px;
+  font-size: 15px;
+  margin-left: -10px;
 }

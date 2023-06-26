@@ -7,7 +7,7 @@ const Invesrtment = (props) => {
     props.linkValue("#logos");
   };
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init();
   }, []);
   return (
     <div
@@ -20,8 +20,8 @@ const Invesrtment = (props) => {
         className="  xl:w-[77%] w-[90%]  m-auto background1   p-7 text-center"
       >
         <p className=" text text-[#343935] text-[46px] max-sm:text-[35px] max-[400px]:text-[29px] max-[400px]:px-0  leading-tight uppercase px-10 pt-5">
-          Your investment uplifts thousandsof skilled craftsmen andtheir
-          lifelong work
+          “OUR INVESTMENT UPLIFTS THOUSANDS OF SKILLED CRAFTSMEN AND THEIR
+          LIFELONG WORK”
         </p>
         <p className="text1 text-sm text-[#343935] px-[10rem] max-lg:px-[4rem] max-sm:px-4 py-5">
           At CraftIndika, we are dedicated to supporting thousands of skilled

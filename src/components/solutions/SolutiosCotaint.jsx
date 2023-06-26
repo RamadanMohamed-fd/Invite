@@ -49,11 +49,11 @@ const SolutiosCotaint = () => {
               </p>
               <p
                 data-aos="fade-left"
-                className="text font-bold text-4xl py-[1.8rem] text-[#343935]"
+                className="text font-bold h-[130px]  text-4xl py-[1.8rem]  text-[#343935]"
               >
                 {item.title}
               </p>
-              <div className=" min-h-[11rem] mb-6 border-black border-b-[1px] ">
+              <div className=" min-h-[7rem] mb-4 border-black border-b-[1px] ">
                 <p
                   data-aos="fade-right"
                   className=" text-[#343935] mr-2 mb-1 font-thin leading-[1.32rem] text1 text-left text-[.88rem]"
@@ -61,13 +61,12 @@ const SolutiosCotaint = () => {
                   {item.sup}
                 </p>
               </div>
-              <div className="max-w-[493px] max-h-[556px]">
+              <div className="max-w-[493px] h-[500px] cursor-pointer ">
                 <img
                   data-aos="zoom-in"
                   src={item.image}
                   alt="Soluation"
                   loading="lazy"
-                  placeholder="blur"
                 />
               </div>
             </div>

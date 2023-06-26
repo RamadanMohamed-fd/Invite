@@ -24,7 +24,7 @@ const Problem = (props) => {
       <p data-aos="fade-up" className="text-white text text-[2.85rem]">
         What are the gaps in market?
       </p>
-      <div className="  flex w-[80%] pb-40 justify-around m-auto items-center flex-wrap ">
+      <div className="  flex w-[80%] pb-40 max-[400px]:gap-y-24  max-sm:w-[90%]   justify-around m-auto items-center flex-wrap ">
         <ProblemContain />
       </div>
       <div className=" pb-[4rem] flex flex-col justify-center items-center ">

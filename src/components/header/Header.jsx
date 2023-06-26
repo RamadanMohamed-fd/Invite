@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./header.css";
 import Typewriter from "typewriter-effect";
 import ScrollSection from "../scroll/ScrollSection";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Bar from "./Bar";
@@ -13,12 +14,12 @@ const Header = (props) => {
     props.linkValue("#invite");
   };
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init();
   }, []);
   return (
     <div
       id="head"
-      className=" w-full h-[110vh] duration-300  text-white header_container relative"
+      className=" w-full h-[125vh]  duration-300   text-white header_container relative"
       onMouseEnter={handleValue}
     >
       <nav className="h-[100px] w-[88%] m-auto  flex  items-center">
@@ -53,14 +54,15 @@ const Header = (props) => {
         </div>
       </nav>
       <div className=" flex justify-center  ">
-        <div className=" text-center  py-2 absolute max-w-[1200px] top-[57%] translate-y-[-50%] min-h-[400px]  px-20 max-sm:px-8  ">
+        <div className=" text-center  py-2 absolute max-w-[1400px] top-[60%] max-sm:top-[55%] translate-y-[-50%] min-h-[400px]  px-16 max-sm:px-10  ">
           <p
             data-aos="fade-up"
-            className="header_text xl:text-9xl text-8xl max-[840px]:text-[82px]
-           max-[530px]:text-[70px] max-[450px]:text-[65px]  max-[400px]:text-[60px]
-            max-[313px]:text-[54px] font-thin "
+            className="header_text  text-8xl max-[1040px]:text-[80px] max-[840px]:text-[70px]
+           max-[570px]:text-[60px] max-[450px]:text-[55px]  max-[400px]:text-[50px]
+            max-[313px]:text-[44px] font-thin "
           >
-            Invest in a priceless culture and your worthy future
+            Invest in World’s first Tech based Handicraft enabler, bringing
+            revolution in the $680 Billion Untapped Market.
           </p>
         </div>
       </div>
