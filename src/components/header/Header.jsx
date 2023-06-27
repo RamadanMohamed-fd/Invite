@@ -3,19 +3,12 @@ import "./header.css";
 import Typewriter from "typewriter-effect";
 import ScrollSection from "../scroll/ScrollSection";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Bar from "./Bar";
 const Header = (props) => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
   const handleValue = () => {
     props.linkValue("#invite");
   };
-  useEffect(() => {
-    AOS.init();
-  }, []);
+
   return (
     <div
       id="head"

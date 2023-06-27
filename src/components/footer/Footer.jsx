@@ -1,12 +1,7 @@
 import React, { useEffect } from "react";
 import FooterLogo from "../svgs/FooterLogo";
-import Aos from "aos";
-import "aos/dist/aos.css";
+
 const Footer = (props) => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-    Aos.refresh();
-  });
   const data = [
     { title: " Company", url: "#" },
     { title: "Collections", url: "#" },

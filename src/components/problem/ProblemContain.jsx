@@ -3,12 +3,8 @@ import M1 from "../svgs/M1";
 import M2 from "../svgs/M2";
 import M3 from "../svgs/M3";
 import M4 from "../svgs/M4";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 const ProblemContain = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
   const data = [
     {
       title: "Artisans",

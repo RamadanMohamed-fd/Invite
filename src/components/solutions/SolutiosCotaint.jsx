@@ -1,39 +1,24 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ScrollSection from "../scroll/ScrollSection";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./solutions.css";
 import { Navigation } from "swiper";
 import { data } from "./data";
-import useWindowSize from "../useWindowSize";
-import Aos from "aos";
-import "aos/dist/aos.css";
+
 const SolutiosCotaint = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-    Aos.refresh();
-  });
-  const size = useWindowSize();
-  let x = 3;
-  if (size.width <= 1115 && size.width >= 840) {
-    x = 2;
-  } else if (size.width < 840) {
-    x = 1;
-  }
   return (
-    <div className="flex sm:mr-16 flex-col max-sm:w-[95%]  w-[85%] group m-auto">
+    <div className="flex sm:mr-16 flex-col  max-sm:w-[95%]  w-[85%] group m-auto">
       <Swiper
-        slidesPerView={x}
+        slidesPerView="auto"
         spaceBetween={30}
-        loop={true}
         navigation={{
           prevEl: ".prev",
           nextEl: ".next",
         }}
         modules={[Navigation]}
-        className="mySwiper"
+        className="mySwiper row-span-1"
       >
         {data.map((item) => (
           <SwiperSlide key={item.id}>
@@ -42,20 +27,20 @@ const SolutiosCotaint = () => {
               className="flex flex-col items-start max-w-[350px]  m-auto "
             >
               <p
-                data-aos="fade-right"
+                data-aos="fade-up"
                 className="text1 text-sm font-bold text-left   text-[#343935]"
               >
                 0{item.id}
               </p>
               <p
-                data-aos="fade-left"
+                data-aos="fade-up"
                 className="text font-bold h-[130px]  text-4xl py-[1.8rem]  text-[#343935]"
               >
                 {item.title}
               </p>
               <div className=" min-h-[7rem] mb-4 border-black border-b-[1px] ">
                 <p
-                  data-aos="fade-right"
+                  data-aos="fade-up"
                   className=" text-[#343935] mr-2 mb-1 font-thin leading-[1.32rem] text1 text-left text-[.88rem]"
                 >
                   {item.sup}
@@ -63,7 +48,7 @@ const SolutiosCotaint = () => {
               </div>
               <div className="max-w-[493px] h-[500px] cursor-pointer ">
                 <img
-                  data-aos="zoom-in"
+                  data-aos="fade-up"
                   src={item.image}
                   alt="Soluation"
                   loading="lazy"
@@ -73,7 +58,7 @@ const SolutiosCotaint = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="  z-20 flex  duration-500 w-full justify-between items-center">
+      <div className="  z-20 flex  duration-500 w-full justify-between max-sm:justify-center items-center">
         <div className=" hover:opacity-100 opacity-70 prev pt-4 duration-500 cursor-pointer">
           <svg
             width="40"

@@ -5,12 +5,7 @@ import { BsTelephoneForward, BsSend } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { MdCancelPresentation } from "react-icons/md";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
 const Form = (props) => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
   const [formInfo, setFormInfo] = useState("");
   const form = useRef();
   const formData = (e) => {

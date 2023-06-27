@@ -11,9 +11,12 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+body {
+  /* overflow-x: hidden; */
+  height: 100vh;
+}
 .over {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: 10px;

@@ -4,15 +4,13 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import InviteSvg from "../svgs/InviteSvg";
 const Invite = (props) => {
-  useEffect(() => {
-    Aos.init({});
-  }, []);
   const handleValue = () => {
     props.linkValue("#problem");
   };
 
   return (
     <div
+      // data-aos="fade-up"
       id="invite"
       onMouseEnter={handleValue}
       className=" relative flex w-full bg-white opacity-100  flex-col justify-start items-center "

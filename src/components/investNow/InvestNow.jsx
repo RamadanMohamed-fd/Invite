@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BsArrowDownShort } from "react-icons/bs";
 import Typewriter from "typewriter-effect";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import Form from "./Form";
 const InvestNow = (props) => {
   const [showForm, setShowForm] = useState(false);
@@ -12,9 +11,7 @@ const InvestNow = (props) => {
   const handleValue = () => {
     props.linkValue("#footer");
   };
-  useEffect(() => {
-    AOS.init();
-  }, []);
+
   return (
     <div
       id="investNow"

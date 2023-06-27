@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import ProcessLogo from "../svgs/ProcessLogo";
 import M1 from "../svgs/M1";
 import M2 from "../svgs/M2";
 import M3 from "../svgs/M3";
 import M4 from "../svgs/M4";
 const Process = (props) => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
   const handleValue = () => {
     props.linkValue("#supported");
   };

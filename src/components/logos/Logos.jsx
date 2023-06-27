@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 const Logos = (props) => {
   const handleValue = () => {
     props.linkValue("#investNow");
   };
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+
   return (
     <div
       id="logos"

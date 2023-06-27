@@ -1,14 +1,11 @@
 import React, { useEffect } from "react";
 import "./investment.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 const Invesrtment = (props) => {
   const handleValue = () => {
     props.linkValue("#logos");
   };
-  useEffect(() => {
-    AOS.init();
-  }, []);
+
   return (
     <div
       onMouseEnter={handleValue}

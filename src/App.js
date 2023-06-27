@@ -11,17 +11,20 @@ import Logos from "./components/logos/Logos";
 import Footer from "./components/footer/Footer";
 import InvestNow from "./components/investNow/InvestNow";
 import ScrollSection from "./components/scroll/ScrollSection";
-// import Scroll from "./components/scroll/SmoothScroll";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
   const [linkValue, setLinkValue] = useState("");
 
   const handleLinkValue = (data) => {
     setLinkValue(data);
   };
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="App over">
-      {/* <Scroll /> */}
       <ScrollSection href={linkValue} />
       <Header linkValue={handleLinkValue} />
       <Invite linkValue={handleLinkValue} />

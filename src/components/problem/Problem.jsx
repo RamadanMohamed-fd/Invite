@@ -1,14 +1,11 @@
 import React, { useEffect } from "react";
 import ProblemContain from "./ProblemContain";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 const Problem = (props) => {
   const handleValue = () => {
     props.linkValue("#solutions");
   };
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+
   return (
     <div
       id="problem"
