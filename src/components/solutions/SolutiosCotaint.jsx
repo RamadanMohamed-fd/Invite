@@ -6,7 +6,6 @@ import "swiper/css/navigation";
 import "./solutions.css";
 import { Autoplay, Navigation } from "swiper";
 import { data } from "./data";
-
 const SolutiosCotaint = () => {
   return (
     <div className="flex   flex-col relative max-sm:w-[95%] overflow-hidden max-h-[100vh]  w-[82%] group m-auto">
@@ -14,16 +13,12 @@ const SolutiosCotaint = () => {
         slidesPerView={3}
         breakpoints={{
           1200: {
-            // width: 576,
             slidesPerView: 3,
           },
           850: {
-            // width: 576,
             slidesPerView: 2,
           },
-
           0: {
-            // width: 768,
             slidesPerView: 1,
           },
         }}
@@ -40,41 +35,41 @@ const SolutiosCotaint = () => {
         modules={[Autoplay, Navigation]}
         className="mySwiper"
       >
-        {data.map((item) => (
+        {data.map((item, index) => (
           <SwiperSlide key={item.id}>
             <div
               key={item.id}
               className="flex flex-col items-start max-w-[350px]  m-auto "
             >
               <p
-                // data-aos="fade-up"
+                data-aos="fade-up"
                 className="text1 text-sm font-bold text-left   text-[#343935]"
               >
                 0{item.id}
               </p>
               <p
-                // data-aos="fade-up"
+                data-aos="fade-up"
                 className="text font-bold h-[130px] w-full text-start max-[400px]:text-3xl text-4xl py-[1.8rem]  text-[#343935]"
               >
                 {item.title}
               </p>
               <div className=" min-h-[7rem] mb-4 border-black border-b-[1px] ">
                 <p
-                  // data-aos="fade-up"
+                  data-aos="fade-right"
                   className=" text-[#343935] mr-2 mb-1 font-thin leading-[1.32rem] text1 text-left text-[.88rem]"
                 >
                   {item.sup}
                 </p>
               </div>
               <div className=" h-[350px] cursor-pointer ">
-                <img src={item.image} alt="Soluation" loading="lazy" />
+                <img src={item.image} alt="Soluation" />
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="  z-20 flex absolute top-[65%]   duration-500 w-full justify-between max-sm:justify-center items-center">
-        <div className=" hover:opacity-100 -translate-x-24 group-hover:translate-x-0 opacity-70 prev pt-4 duration-700 cursor-pointer">
+      <div className="  z-20 flex absolute top-[65%] max-sm:top-[90%]  duration-500 w-full justify-between max-sm:justify-center items-center">
+        <div className=" hover:opacity-100 -translate-x-24  group-hover:sm:translate-x-0 opacity-70 prev pt-4 duration-700 cursor-pointer">
           <svg
             width="40"
             height="40"
@@ -96,7 +91,7 @@ const SolutiosCotaint = () => {
             />
           </svg>
         </div>
-        <div className="next pt-4 hover:opacity-100 translate-x-24 group-hover:translate-x-0 opacity-70 duration-700 cursor-pointer">
+        <div className="next pt-4 hover:opacity-100 translate-x-24  group-hover:sm:translate-x-0 opacity-70 duration-700 cursor-pointer">
           <svg
             width="40"
             height="40"
