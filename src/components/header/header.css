@@ -15,6 +15,7 @@
 @font-face {
   font-family: "MADE Mirage";
   src: url(../../../public/fonts/MADE\ Mirage\ Thin\ PERSONAL\ USE.otf);
+  font-display: swap;
 }
 .header_text,
 .text {

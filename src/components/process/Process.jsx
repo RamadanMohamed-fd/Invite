@@ -10,9 +10,9 @@ const Process = (props) => {
     props.linkValue("#supported");
   };
   const text = [
-    "Procure handmade crafts straight from the maker without any middlemen",
-    "Put it in the IMS and list it on our B2B marketplaces and enable bulk pay",
-    "Customers can directlly buy through our shopping website or partner ecommerce",
+    "Procure handmade Crafts using Virtual Clusters straight from Artisans",
+    "Put in the IIMS and List the Products in our B2B Marketplace and enable Bulk Buy",
+    "Have a faster reach worldwide with CaftPartners and get location specific data for AI Demand forecasting",
   ];
   return (
     <div
@@ -71,8 +71,8 @@ const Process = (props) => {
                 data-aos="fade-up"
                 className="sm:hidden  w-[150px] text-sm text-center text1 bg-white  text-[#343935] opacity-80"
               >
-                CraftIndika gives fair wage, welfare and credit support as
-                needed by artisans
+                Caters with Fair Wages, Welfare, Credit Support, Research Input
+                and Many More
               </p>
               <span
                 data-aos="fade-up"
@@ -170,7 +170,8 @@ const Process = (props) => {
             data-aos="fade-up"
             className="  w-[150px] text-[14px]   text-center text1 bg-white  text-[#343935] opacity-90"
           >
-            what you will get from CraftIndilka as business owners and investor
+            Customers can buy authentic handicraft directly through our eCom or
+            CraftPartners
           </p>
           <span
             data-aos="fade-up"
@@ -236,7 +237,8 @@ const Process = (props) => {
             data-aos="fade-up"
             className="  w-[150px] text-[14px]   text-center text1 bg-white  text-[#343935] opacity-90"
           >
-            what you will get from CraftIndilka as business owners and investor
+            Have a reach of Customers preferring eCommerce and get global data
+            for AI demand forecasting
           </p>
           <span
             data-aos="fade-up"

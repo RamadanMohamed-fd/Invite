@@ -12,8 +12,8 @@ const Form = (props) => {
     e.preventDefault();
     const name = form.current.name.value;
     const email = form.current.email.value;
-    const phone = form.current.phone.value;
-    setFormInfo({ name, email, phone });
+    const number = form.current.phone.value;
+    setFormInfo({ name, email, number });
     props.show();
   };
 
@@ -46,9 +46,9 @@ const Form = (props) => {
         <div className=" mb-10 relative">
           <input
             type="number"
-            name="phone"
+            name="number"
             required
-            id="Phone"
+            id="phone"
             placeholder=" "
             className="w-full p-3 outline-none border-2 border-white bg-transparent text-sm"
           />

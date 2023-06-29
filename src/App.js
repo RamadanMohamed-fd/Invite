@@ -21,7 +21,7 @@ function App() {
     setLinkValue(data);
   };
   useEffect(() => {
-    AOS.init();
+    AOS.init({ duration: 1000 });
   }, []);
   return (
     <div className="App over">
